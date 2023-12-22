@@ -1,0 +1,10 @@
+{
+  "company": "COMPANY",
+  "products": "PRODUCTS",
+  "news": "NEWS",
+  "e-catalog": "E-CATALOG",
+  "contacts": "CONTACTS",
+  "breadCrumb_ecatalog": "e-catalog",
+  "breadCrumb_news": "news",
+  "breadCrumb_contactus": "contact us"
+}

@@ -1,0 +1,16 @@
+{
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "root": true,
+  "extends": ["@nuxtjs/eslint-config-typescript", "prettier"],
+  "plugins": ["prettier"],
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser"
+  },
+  "rules": {
+    "no-console": "warn",
+    "prettier/prettier": "error"
+  }
+}
