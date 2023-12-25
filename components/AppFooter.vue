@@ -21,7 +21,7 @@
           <div class="text-xl text-white">
             <ul class="mb-10 flex flex-wrap items-center justify-center gap-2 xs:justify-between">
               <li>
-                <NuxtLink to="">關於峰益</NuxtLink>
+                <NuxtLink to="/about">關於峰益</NuxtLink>
               </li>
               <li>
                 <NuxtLink to="">產品介紹</NuxtLink>

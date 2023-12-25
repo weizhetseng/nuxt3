@@ -4,6 +4,9 @@ export default defineNuxtConfig({
   typescript: {
     typeCheck: true
   },
+  build: {
+    transpile: ['vue-countup-v3']
+  },
   modules: ['@nuxtjs/i18n', '@pinia/nuxt', 'dayjs-nuxt'],
   css: ['~/assets/scss/main.scss'],
   postcss: {
@@ -42,6 +45,11 @@ export default defineNuxtConfig({
       '/api/**': {
         proxy: 'https://hongyihe.com/api/**'
       }
+    }
+  },
+  vue: {
+    compilerOptions: {
+      isCustomElement: (tag) => /^(swiper|swiper-slide|swiper-container)$/.test(tag)
     }
   }
 })
