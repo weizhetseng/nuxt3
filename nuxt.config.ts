@@ -7,7 +7,7 @@ export default defineNuxtConfig({
   build: {
     transpile: ['vue-countup-v3']
   },
-  modules: ['@nuxtjs/i18n', '@pinia/nuxt', 'dayjs-nuxt'],
+  modules: ['@nuxtjs/i18n', '@pinia/nuxt', 'dayjs-nuxt', '@vee-validate/nuxt'],
   css: ['~/assets/scss/main.scss'],
   postcss: {
     plugins: {
@@ -50,6 +50,15 @@ export default defineNuxtConfig({
   vue: {
     compilerOptions: {
       isCustomElement: (tag) => /^(swiper|swiper-slide|swiper-container)$/.test(tag)
+    }
+  },
+  veeValidate: {
+    autoImports: true,
+    componentNames: {
+      Form: 'VForm',
+      Field: 'VField',
+      FieldArray: 'VFieldArray',
+      ErrorMessage: 'VErrorMessage'
     }
   }
 })
